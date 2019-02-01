@@ -1,13 +1,27 @@
 @import "variables";
 
+// Mixins
+
+#links {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500 !important;
+  .buttons {
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
+}
+
+// Generalized Styles
+
 nav {
   height: 100px;
   background-color: @yellow-primary;
   padding-left: 75px !important;
+  a {
+    color: @black-secondary;
 }
-
-nav a {
-  color: @black-secondary;
 }
 
 h2 {
@@ -16,8 +30,10 @@ h2 {
 
 button {
   background-color: @yellow-primary !important;
-  color: @black-secondary !important;
+  color: #050500;
   border: 0 !important;
+  font-family: Roboto;
+  font-size: 18px;
 }
 
 footer {
