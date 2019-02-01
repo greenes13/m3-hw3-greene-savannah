@@ -9,7 +9,7 @@
   font-weight: 500 !important;
   .buttons {
     border-radius: 8px;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
 }
 
@@ -21,19 +21,31 @@ nav {
   padding-left: 75px !important;
   a {
     color: @black-secondary;
-}
+  }
 }
 
-h2 {
-  color: @black-secondary;
+section {
+  h1 {
+    font-family: Roboto;
+    font-size: 30px;
+    color: #050500;
+    font-weight: 500 !important;
+      span {
+        color: @red-primary !important;
+      }
+    }
+  p {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #050500;
+    font-weight: 400 !important;
+  }
 }
 
 button {
   background-color: @yellow-primary !important;
-  color: #050500;
   border: 0 !important;
-  font-family: Roboto;
-  font-size: 18px;
+    #links.buttons ();
 }
 
 footer {
@@ -52,8 +64,4 @@ footer img {
 
 section {
   margin: 50px 50px 50px 60px !important;
-}
-
-.red {
-   color: @red-primary !important;
 }
